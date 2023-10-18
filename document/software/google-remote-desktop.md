@@ -34,6 +34,8 @@ sudo nano /opt/google/chrome-remote-desktop/chrome-remote-desktop
 
 以下のような変更を加える<br>
 ```
+# 2023/10/18時点での設定ファイルの編集
+
 # launch_session関数の以下の部分をコメントアウト(先頭に#を付加)
 # self._launch_server(server_args)
 # if not self._launch_desktop_pre_session():
