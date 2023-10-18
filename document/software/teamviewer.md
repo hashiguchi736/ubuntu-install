@@ -24,12 +24,11 @@ sudo apt upgarade
 ライセンスの問題があるため，アップデートされないように固定する<br>
 ```bash
 # パッケージバージョンの固定
-sudo apt-mark hold teamviewer-host
+sudo apt-mark hold teamviewer
 
 # もし，固定を解除したい場合は，以下の通り
-sudo apt-mark unhold teamviewer-host
+sudo apt-mark unhold teamviewer
 ```
 
 ## 初期設定
-インストール後，「TeamViewerライセンス契約」ウィンドウが表示される<br>
-「ライセンス契約に同意する」をクリック
+teamviewerの「その他」>「オプション」>「全般」の「TeamViewerシステムで起動」にチェックを入れ，適用をクリック
