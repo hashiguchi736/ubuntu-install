@@ -37,11 +37,38 @@ GUIウィンドウが開いたら,
 「Select the default wineprefix」→「Install a font」→「cjkfonts」でフォントをインストールする<br>
 インストール中, 幾度となく警告ダイアログが表示されるが, 無視して進む<br>
 
+## シリアルポートの割当
+ターミナルを開き, 
+```
+cd ~/.wine/dosdevices
+ls -la
+```
+で, comポートとttyデバイスとの対応が確認できる<br>
+
+割当を変更するには, ターミナルを開き, 
+```
+cd ~/.wine/dosdevices
+# すでに割当が存在する場合, 以下のコマンドも実行
+rm <削除したいcomポート番号>
+
+# exp) ln -s /dev/ttyUSB0 com1
+ln -s /dev/<Linux側で割り当てたいデバイス> <Wine上で認識させたいComポート番号>
+```
+
+**Note:**<br>
+Linux側でデバイスにR/W権限を付与しておく必要がある<br>
+```
+sudo chmod +rw /dev/<Linux側で割り当てたいデバイス>
+```
+
+
 ## Windowsアプリの実行
 ダウンロードなどしてきた.exeファイルを「ファイルマネージャー」上で右クリックし, 「別のアプリケーションで開く」を選択<br>
 「Wine Windows プログラムローダー」を選択すると, Wine越しに実行することができる<br>
 
-Linux上で完全にWindowsアプリが動くわけではないことに注意<br>
+「Linux上で完全にWindowsアプリが動くというわけではない」ことに注意<br>
+
+
 
 ## 参考URL
 [Wine公式HP](https://wiki.winehq.org/Ubuntu)
