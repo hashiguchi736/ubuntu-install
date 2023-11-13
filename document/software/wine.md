@@ -41,7 +41,7 @@ GUIウィンドウが開いたら,
 ダウンロードなどしてきた.exeファイルを「ファイルマネージャー」上で右クリックし, 「別のアプリケーションで開く」を選択<br>
 「Wine Windows プログラムローダー」を選択すると, Wine越しに実行することができる<br>
 
-Linux上で完全にWindowsアプリが動くわけではないことに注意br>
+Linux上で完全にWindowsアプリが動くわけではないことに注意<br>
 
 ## 参考URL
 [Wine公式HP](https://wiki.winehq.org/Ubuntu)
